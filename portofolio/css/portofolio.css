@@ -1,0 +1,79 @@
+/* start projects section */
+.boxes{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 500px) );
+    justify-content: space-around;
+}
+.portofolio h3{
+    color: var(--main--color);
+    margin-top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 25px;
+
+    /* text-shadow:  3px 3px 3px #8585857d; */
+}
+.portofolio .boxes .project-box{
+/* da elha3ml styling kol project lwahdo */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+.portofolio .boxes .project-box a{
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.portofolio .boxes .project-box a:hover{
+    color: yellow;
+}
+.portofolio .boxes .project-box:first-of-type{
+    position: relative;
+}
+.portofolio .boxes .project-box:first-of-type .description{
+    padding-top: 50px;
+}
+.portofolio .boxes .project-box:first-of-type img:nth-child(2){
+    position: absolute;
+    top: 60px;
+    left: calc(50% + 25px);
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.portofolio .boxes .project-box:first-of-type img:nth-child(3){
+    position: absolute;
+    top: 80px;
+    left: calc(50% + 50px);
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.portofolio .boxes .project-box:first-of-type img:hover{
+    z-index: 100;
+}
+.portofolio .boxes .project-box img{
+    padding: 5px 5px;
+    max-width: 280px;
+    max-height: 300px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.portofolio .boxes .project-box img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.portofolio .boxes .description{
+    display: block;
+}
+.portofolio .boxes .project-box h2,
+.portofolio .boxes .project-box p{
+    color: var(--main--color);
+    text-align: left;
+    line-height: 1.6;
+}
+.portofolio .boxes .project-box p span{
+    color: #808080;
+}
+/* end projects section */
